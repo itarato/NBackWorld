@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NBackWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js0-uG-NPH">
+                                <rect key="frame" x="550" y="562" width="30" height="30"/>
+                                <state key="normal" title="Yes"/>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="350" y="185" width="30" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="750" y="750" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onHitYes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZiZ-bG-idY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZm-gy-eSF">
+                                <rect key="frame" x="20" y="562" width="30" height="30"/>
+                                <state key="normal" title="No"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="750" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onHitNo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBp-Ev-Bio"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAF-uZ-sap">
+                                <rect key="frame" x="279" y="566" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pAF-uZ-sap" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2en-kO-H2a"/>
+                            <constraint firstItem="js0-uG-NPH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VDI-cG-3Qz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eZm-gy-eSF" secondAttribute="bottom" constant="20" id="buR-T7-hBW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pAF-uZ-sap" secondAttribute="bottom" constant="13" id="eyX-1K-HxE"/>
+                            <constraint firstItem="eZm-gy-eSF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hfS-ef-MO7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eZm-gy-eSF" secondAttribute="bottom" constant="8" symbolic="YES" id="ibe-d2-e2o"/>
+                            <constraint firstItem="eZm-gy-eSF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oZc-uR-ssZ"/>
+                            <constraint firstItem="eZm-gy-eSF" firstAttribute="baseline" secondItem="js0-uG-NPH" secondAttribute="baseline" id="wpZ-fh-m95"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="oZc-uR-ssZ"/>
+                                <exclude reference="buR-T7-hBW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="oZc-uR-ssZ"/>
+                                <include reference="buR-T7-hBW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="pAF-uZ-sap" id="RFo-Ec-SWL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

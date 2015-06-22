@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		473F01F91B38803B001E69D1 /* SimpleCharNBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01F81B38803B001E69D1 /* SimpleCharNBack.swift */; };
+		473F01FB1B388163001E69D1 /* NBackRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01FA1B388163001E69D1 /* NBackRule.swift */; };
+		473F01FD1B389D7D001E69D1 /* RandomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01FC1B389D7D001E69D1 /* RandomUtil.swift */; };
+		4795B8B01B371ACB00940776 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795B8AF1B371ACB00940776 /* CardController.swift */; };
+		4795B8B21B371B1D00940776 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4795B8B11B371B1D00940776 /* CardView.xib */; };
+		47D5F8381B35663500A0791F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D5F8371B35663500A0791F /* AppDelegate.swift */; };
+		47D5F83A1B35663500A0791F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D5F8391B35663500A0791F /* ViewController.swift */; };
+		47D5F83D1B35663500A0791F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D5F83B1B35663500A0791F /* Main.storyboard */; };
+		47D5F83F1B35663500A0791F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D5F83E1B35663500A0791F /* Assets.xcassets */; };
+		47D5F8421B35663500A0791F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D5F8401B35663500A0791F /* LaunchScreen.storyboard */; };
+		47D5F84D1B35663500A0791F /* NBackWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D5F84C1B35663500A0791F /* NBackWorldTests.swift */; };
+		47D5F8581B35663500A0791F /* NBackWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D5F8571B35663500A0791F /* NBackWorldUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47D5F8491B35663500A0791F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47D5F82C1B35663500A0791F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47D5F8331B35663500A0791F;
+			remoteInfo = NBackWorld;
+		};
+		47D5F8541B35663500A0791F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47D5F82C1B35663500A0791F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47D5F8331B35663500A0791F;
+			remoteInfo = NBackWorld;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		473F01F81B38803B001E69D1 /* SimpleCharNBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCharNBack.swift; sourceTree = "<group>"; };
+		473F01FA1B388163001E69D1 /* NBackRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBackRule.swift; sourceTree = "<group>"; };
+		473F01FC1B389D7D001E69D1 /* RandomUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUtil.swift; sourceTree = "<group>"; };
+		4795B8AF1B371ACB00940776 /* CardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		4795B8B11B371B1D00940776 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		47D5F8341B35663500A0791F /* NBackWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBackWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D5F8371B35663500A0791F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47D5F8391B35663500A0791F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47D5F83C1B35663500A0791F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47D5F83E1B35663500A0791F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47D5F8411B35663500A0791F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47D5F8431B35663500A0791F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D5F8481B35663500A0791F /* NBackWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBackWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D5F84C1B35663500A0791F /* NBackWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBackWorldTests.swift; sourceTree = "<group>"; };
+		47D5F84E1B35663500A0791F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D5F8531B35663500A0791F /* NBackWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBackWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D5F8571B35663500A0791F /* NBackWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBackWorldUITests.swift; sourceTree = "<group>"; };
+		47D5F8591B35663500A0791F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47D5F8311B35663500A0791F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D5F8451B35663500A0791F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D5F8501B35663500A0791F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		473F01FE1B389EE4001E69D1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				47D5F83B1B35663500A0791F /* Main.storyboard */,
+				47D5F8401B35663500A0791F /* LaunchScreen.storyboard */,
+				4795B8B11B371B1D00940776 /* CardView.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		473F01FF1B389EF8001E69D1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				473F02021B389F36001E69D1 /* Game */,
+				473F02001B389F15001E69D1 /* Util */,
+				47D5F8371B35663500A0791F /* AppDelegate.swift */,
+				47D5F8391B35663500A0791F /* ViewController.swift */,
+				4795B8AF1B371ACB00940776 /* CardController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		473F02001B389F15001E69D1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				473F01FC1B389D7D001E69D1 /* RandomUtil.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		473F02021B389F36001E69D1 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				473F01F81B38803B001E69D1 /* SimpleCharNBack.swift */,
+				473F01FA1B388163001E69D1 /* NBackRule.swift */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		47D5F82B1B35663500A0791F = {
+			isa = PBXGroup;
+			children = (
+				47D5F8361B35663500A0791F /* NBackWorld */,
+				47D5F84B1B35663500A0791F /* NBackWorldTests */,
+				47D5F8561B35663500A0791F /* NBackWorldUITests */,
+				47D5F8351B35663500A0791F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47D5F8351B35663500A0791F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47D5F8341B35663500A0791F /* NBackWorld.app */,
+				47D5F8481B35663500A0791F /* NBackWorldTests.xctest */,
+				47D5F8531B35663500A0791F /* NBackWorldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47D5F8361B35663500A0791F /* NBackWorld */ = {
+			isa = PBXGroup;
+			children = (
+				473F01FF1B389EF8001E69D1 /* Classes */,
+				473F01FE1B389EE4001E69D1 /* UI */,
+				47D5F83E1B35663500A0791F /* Assets.xcassets */,
+				47D5F8431B35663500A0791F /* Info.plist */,
+			);
+			path = NBackWorld;
+			sourceTree = "<group>";
+		};
+		47D5F84B1B35663500A0791F /* NBackWorldTests */ = {
+			isa = PBXGroup;
+			children = (
+				47D5F84C1B35663500A0791F /* NBackWorldTests.swift */,
+				47D5F84E1B35663500A0791F /* Info.plist */,
+			);
+			path = NBackWorldTests;
+			sourceTree = "<group>";
+		};
+		47D5F8561B35663500A0791F /* NBackWorldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				47D5F8571B35663500A0791F /* NBackWorldUITests.swift */,
+				47D5F8591B35663500A0791F /* Info.plist */,
+			);
+			path = NBackWorldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47D5F8331B35663500A0791F /* NBackWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D5F85C1B35663500A0791F /* Build configuration list for PBXNativeTarget "NBackWorld" */;
+			buildPhases = (
+				47D5F8301B35663500A0791F /* Sources */,
+				47D5F8311B35663500A0791F /* Frameworks */,
+				47D5F8321B35663500A0791F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBackWorld;
+			productName = NBackWorld;
+			productReference = 47D5F8341B35663500A0791F /* NBackWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47D5F8471B35663500A0791F /* NBackWorldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D5F85F1B35663500A0791F /* Build configuration list for PBXNativeTarget "NBackWorldTests" */;
+			buildPhases = (
+				47D5F8441B35663500A0791F /* Sources */,
+				47D5F8451B35663500A0791F /* Frameworks */,
+				47D5F8461B35663500A0791F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47D5F84A1B35663500A0791F /* PBXTargetDependency */,
+			);
+			name = NBackWorldTests;
+			productName = NBackWorldTests;
+			productReference = 47D5F8481B35663500A0791F /* NBackWorldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		47D5F8521B35663500A0791F /* NBackWorldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D5F8621B35663500A0791F /* Build configuration list for PBXNativeTarget "NBackWorldUITests" */;
+			buildPhases = (
+				47D5F84F1B35663500A0791F /* Sources */,
+				47D5F8501B35663500A0791F /* Frameworks */,
+				47D5F8511B35663500A0791F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47D5F8551B35663500A0791F /* PBXTargetDependency */,
+			);
+			name = NBackWorldUITests;
+			productName = NBackWorldUITests;
+			productReference = 47D5F8531B35663500A0791F /* NBackWorldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47D5F82C1B35663500A0791F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Peter Arato";
+				TargetAttributes = {
+					47D5F8331B35663500A0791F = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = M4DY589ML9;
+					};
+					47D5F8471B35663500A0791F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 47D5F8331B35663500A0791F;
+					};
+					47D5F8521B35663500A0791F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 47D5F8331B35663500A0791F;
+					};
+				};
+			};
+			buildConfigurationList = 47D5F82F1B35663500A0791F /* Build configuration list for PBXProject "NBackWorld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47D5F82B1B35663500A0791F;
+			productRefGroup = 47D5F8351B35663500A0791F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47D5F8331B35663500A0791F /* NBackWorld */,
+				47D5F8471B35663500A0791F /* NBackWorldTests */,
+				47D5F8521B35663500A0791F /* NBackWorldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47D5F8321B35663500A0791F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D5F8421B35663500A0791F /* LaunchScreen.storyboard in Resources */,
+				47D5F83F1B35663500A0791F /* Assets.xcassets in Resources */,
+				4795B8B21B371B1D00940776 /* CardView.xib in Resources */,
+				47D5F83D1B35663500A0791F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D5F8461B35663500A0791F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D5F8511B35663500A0791F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47D5F8301B35663500A0791F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473F01FD1B389D7D001E69D1 /* RandomUtil.swift in Sources */,
+				47D5F83A1B35663500A0791F /* ViewController.swift in Sources */,
+				473F01FB1B388163001E69D1 /* NBackRule.swift in Sources */,
+				4795B8B01B371ACB00940776 /* CardController.swift in Sources */,
+				47D5F8381B35663500A0791F /* AppDelegate.swift in Sources */,
+				473F01F91B38803B001E69D1 /* SimpleCharNBack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D5F8441B35663500A0791F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D5F84D1B35663500A0791F /* NBackWorldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D5F84F1B35663500A0791F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D5F8581B35663500A0791F /* NBackWorldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47D5F84A1B35663500A0791F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47D5F8331B35663500A0791F /* NBackWorld */;
+			targetProxy = 47D5F8491B35663500A0791F /* PBXContainerItemProxy */;
+		};
+		47D5F8551B35663500A0791F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47D5F8331B35663500A0791F /* NBackWorld */;
+			targetProxy = 47D5F8541B35663500A0791F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47D5F83B1B35663500A0791F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47D5F83C1B35663500A0791F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47D5F8401B35663500A0791F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47D5F8411B35663500A0791F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47D5F85A1B35663500A0791F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47D5F85B1B35663500A0791F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47D5F85D1B35663500A0791F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NBackWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itarato.NBackWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47D5F85E1B35663500A0791F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NBackWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itarato.NBackWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		47D5F8601B35663500A0791F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NBackWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itarato.NBackWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBackWorld.app/NBackWorld";
+			};
+			name = Debug;
+		};
+		47D5F8611B35663500A0791F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NBackWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itarato.NBackWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBackWorld.app/NBackWorld";
+			};
+			name = Release;
+		};
+		47D5F8631B35663500A0791F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NBackWorldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itarato.NBackWorldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NBackWorld;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		47D5F8641B35663500A0791F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NBackWorldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itarato.NBackWorldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NBackWorld;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47D5F82F1B35663500A0791F /* Build configuration list for PBXProject "NBackWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D5F85A1B35663500A0791F /* Debug */,
+				47D5F85B1B35663500A0791F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D5F85C1B35663500A0791F /* Build configuration list for PBXNativeTarget "NBackWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D5F85D1B35663500A0791F /* Debug */,
+				47D5F85E1B35663500A0791F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D5F85F1B35663500A0791F /* Build configuration list for PBXNativeTarget "NBackWorldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D5F8601B35663500A0791F /* Debug */,
+				47D5F8611B35663500A0791F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D5F8621B35663500A0791F /* Build configuration list for PBXNativeTarget "NBackWorldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D5F8631B35663500A0791F /* Debug */,
+				47D5F8641B35663500A0791F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47D5F82C1B35663500A0791F /* Project object */;
+}
