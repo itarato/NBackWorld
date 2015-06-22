@@ -10,6 +10,13 @@
 		473F01F91B38803B001E69D1 /* SimpleCharNBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01F81B38803B001E69D1 /* SimpleCharNBack.swift */; };
 		473F01FB1B388163001E69D1 /* NBackRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01FA1B388163001E69D1 /* NBackRule.swift */; };
 		473F01FD1B389D7D001E69D1 /* RandomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01FC1B389D7D001E69D1 /* RandomUtil.swift */; };
+		473F02041B38A3A6001E69D1 /* TypeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F02031B38A3A6001E69D1 /* TypeUtil.swift */; };
+		473F02061B38A437001E69D1 /* RandomUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F02051B38A437001E69D1 /* RandomUtilTests.swift */; };
+		473F02081B38A859001E69D1 /* TypeUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F02071B38A859001E69D1 /* TypeUtilTests.swift */; };
+		473F020A1B38AC42001E69D1 /* LimitedQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F02091B38AC42001E69D1 /* LimitedQueue.swift */; };
+		473F020C1B38AF81001E69D1 /* LimitedQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F020B1B38AF81001E69D1 /* LimitedQueueTests.swift */; };
+		473F02111B38B0CE001E69D1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F02101B38B0CE001E69D1 /* Errors.swift */; };
+		473F02131B38B102001E69D1 /* LimitedQueueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F02121B38B102001E69D1 /* LimitedQueueError.swift */; };
 		4795B8B01B371ACB00940776 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795B8AF1B371ACB00940776 /* CardController.swift */; };
 		4795B8B21B371B1D00940776 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4795B8B11B371B1D00940776 /* CardView.xib */; };
 		47D5F8381B35663500A0791F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D5F8371B35663500A0791F /* AppDelegate.swift */; };
@@ -42,6 +49,13 @@
 		473F01F81B38803B001E69D1 /* SimpleCharNBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCharNBack.swift; sourceTree = "<group>"; };
 		473F01FA1B388163001E69D1 /* NBackRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBackRule.swift; sourceTree = "<group>"; };
 		473F01FC1B389D7D001E69D1 /* RandomUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUtil.swift; sourceTree = "<group>"; };
+		473F02031B38A3A6001E69D1 /* TypeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeUtil.swift; sourceTree = "<group>"; };
+		473F02051B38A437001E69D1 /* RandomUtilTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUtilTests.swift; sourceTree = "<group>"; };
+		473F02071B38A859001E69D1 /* TypeUtilTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeUtilTests.swift; sourceTree = "<group>"; };
+		473F02091B38AC42001E69D1 /* LimitedQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitedQueue.swift; sourceTree = "<group>"; };
+		473F020B1B38AF81001E69D1 /* LimitedQueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitedQueueTests.swift; sourceTree = "<group>"; };
+		473F02101B38B0CE001E69D1 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		473F02121B38B102001E69D1 /* LimitedQueueError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitedQueueError.swift; sourceTree = "<group>"; };
 		4795B8AF1B371ACB00940776 /* CardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
 		4795B8B11B371B1D00940776 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		47D5F8341B35663500A0791F /* NBackWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBackWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +111,7 @@
 		473F01FF1B389EF8001E69D1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				473F020D1B38B09D001E69D1 /* Error */,
 				473F02021B389F36001E69D1 /* Game */,
 				473F02001B389F15001E69D1 /* Util */,
 				47D5F8371B35663500A0791F /* AppDelegate.swift */,
@@ -110,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				473F01FC1B389D7D001E69D1 /* RandomUtil.swift */,
+				473F02031B38A3A6001E69D1 /* TypeUtil.swift */,
+				473F02091B38AC42001E69D1 /* LimitedQueue.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -121,6 +138,15 @@
 				473F01FA1B388163001E69D1 /* NBackRule.swift */,
 			);
 			name = Game;
+			sourceTree = "<group>";
+		};
+		473F020D1B38B09D001E69D1 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				473F02101B38B0CE001E69D1 /* Errors.swift */,
+				473F02121B38B102001E69D1 /* LimitedQueueError.swift */,
+			);
+			name = Error;
 			sourceTree = "<group>";
 		};
 		47D5F82B1B35663500A0791F = {
@@ -159,6 +185,9 @@
 			children = (
 				47D5F84C1B35663500A0791F /* NBackWorldTests.swift */,
 				47D5F84E1B35663500A0791F /* Info.plist */,
+				473F02051B38A437001E69D1 /* RandomUtilTests.swift */,
+				473F02071B38A859001E69D1 /* TypeUtilTests.swift */,
+				473F020B1B38AF81001E69D1 /* LimitedQueueTests.swift */,
 			);
 			path = NBackWorldTests;
 			sourceTree = "<group>";
@@ -304,11 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473F02041B38A3A6001E69D1 /* TypeUtil.swift in Sources */,
 				473F01FD1B389D7D001E69D1 /* RandomUtil.swift in Sources */,
+				473F020A1B38AC42001E69D1 /* LimitedQueue.swift in Sources */,
 				47D5F83A1B35663500A0791F /* ViewController.swift in Sources */,
 				473F01FB1B388163001E69D1 /* NBackRule.swift in Sources */,
+				473F02131B38B102001E69D1 /* LimitedQueueError.swift in Sources */,
 				4795B8B01B371ACB00940776 /* CardController.swift in Sources */,
 				47D5F8381B35663500A0791F /* AppDelegate.swift in Sources */,
+				473F02111B38B0CE001E69D1 /* Errors.swift in Sources */,
 				473F01F91B38803B001E69D1 /* SimpleCharNBack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +350,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473F02061B38A437001E69D1 /* RandomUtilTests.swift in Sources */,
+				473F02081B38A859001E69D1 /* TypeUtilTests.swift in Sources */,
+				473F020C1B38AF81001E69D1 /* LimitedQueueTests.swift in Sources */,
 				47D5F84D1B35663500A0791F /* NBackWorldTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

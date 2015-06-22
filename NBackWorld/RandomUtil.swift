@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RandomUtil {
+public class RandomUtil {
 
     static func randIntRange(from: Int, to: Int) -> Int {
         let randInt:UInt32 = arc4random()

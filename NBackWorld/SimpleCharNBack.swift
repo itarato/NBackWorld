@@ -10,17 +10,18 @@ import Foundation
 
 class SimpleCharNBack : NBackRule {
     
-    var N:Int = 1
-    
     let chars:String = "ABCDEFGHIJKLMNOPQRSTUVWXY"
+    let range:Int = 2
     
-    init() {
+    var N:Int = 1
+    var rangeMax:Int {
+        get {
+            return self.chars.characters.count
+        }
     }
     
     func getNext() -> String {
-//        let range = self.chars.characters.count
-        let range = 2
-        let rand = RandomUtil.randIntRange(0, to: range)
+        let rand = RandomUtil.randIntRange(0, to: self.range)
         return "\(self.chars[advance(self.chars.startIndex, rand)])"
     }
     
