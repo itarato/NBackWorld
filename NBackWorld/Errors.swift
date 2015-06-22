@@ -9,5 +9,7 @@
 import Foundation
 
 enum NBackWorldError : ErrorType {
+    
     case Error
+
 }

@@ -1,0 +1,6 @@
+NBackWorld
+==========
+
+This project is a toy project to practice Swift 2 and iOS.
+The game is similar to the classical n-back game.
+
