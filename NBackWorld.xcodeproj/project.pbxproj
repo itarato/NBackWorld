@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47099B191B3BD84300BE3715 /* FillerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47099B181B3BD84300BE3715 /* FillerView.swift */; };
 		473F01F91B38803B001E69D1 /* SimpleCharNBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01F81B38803B001E69D1 /* SimpleCharNBack.swift */; };
 		473F01FB1B388163001E69D1 /* NBackRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01FA1B388163001E69D1 /* NBackRule.swift */; };
 		473F01FD1B389D7D001E69D1 /* RandomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01FC1B389D7D001E69D1 /* RandomUtil.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47099B181B3BD84300BE3715 /* FillerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillerView.swift; sourceTree = "<group>"; };
 		473F01F81B38803B001E69D1 /* SimpleCharNBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCharNBack.swift; sourceTree = "<group>"; };
 		473F01FA1B388163001E69D1 /* NBackRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBackRule.swift; sourceTree = "<group>"; };
 		473F01FC1B389D7D001E69D1 /* RandomUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUtil.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47099B171B3BD82800BE3715 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				47099B181B3BD84300BE3715 /* FillerView.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		473F01FE1B389EE4001E69D1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 		473F01FF1B389EF8001E69D1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				47099B171B3BD82800BE3715 /* UI */,
 				473F020D1B38B09D001E69D1 /* Error */,
 				473F02021B389F36001E69D1 /* Game */,
 				473F02001B389F15001E69D1 /* Util */,
@@ -340,6 +351,7 @@
 				473F01FB1B388163001E69D1 /* NBackRule.swift in Sources */,
 				473F02131B38B102001E69D1 /* LimitedQueueError.swift in Sources */,
 				4795B8B01B371ACB00940776 /* CardController.swift in Sources */,
+				47099B191B3BD84300BE3715 /* FillerView.swift in Sources */,
 				47D5F8381B35663500A0791F /* AppDelegate.swift in Sources */,
 				473F02111B38B0CE001E69D1 /* Errors.swift in Sources */,
 				473F01F91B38803B001E69D1 /* SimpleCharNBack.swift in Sources */,

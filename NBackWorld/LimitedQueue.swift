@@ -25,8 +25,16 @@ class LimitedQueue<T> {
         self.queue[0] = item
     }
     
+    func getFirst() throws -> T {
+        return try self.getItemAt(0)
+    }
+    
     func getLast() throws -> T {
-        if let item:T = self.queue[self.limit - 1] {
+        return try self.getItemAt(self.limit - 1)
+    }
+    
+    private func getItemAt(idx: Int) throws -> T {
+        if let item:T = self.queue[idx] {
             return item
         }
         throw LimitedQueueError.MissingQueueElement

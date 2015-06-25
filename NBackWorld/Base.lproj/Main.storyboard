@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,66 +18,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js0-uG-NPH">
-                                <rect key="frame" x="550" y="562" width="30" height="30"/>
-                                <state key="normal" title="Yes"/>
-                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="350" y="185" width="30" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAF-uZ-sap">
+                                <rect key="frame" x="535" y="20" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="b0V-R6-dbf" customClass="FillerView" customModule="NBackWorld" customModuleProvider="target">
+                                <rect key="frame" x="20" y="49" width="560" height="475"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b0V-R6-dbf" secondAttribute="height" multiplier="40:33" id="aDx-1z-vXJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aDx-1z-vXJ"/>
+                                    </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="750" y="750" width="30" height="30"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="aDx-1z-vXJ"/>
+                                    </mask>
                                 </variation>
-                                <connections>
-                                    <action selector="onHitYes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZiZ-bG-idY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZm-gy-eSF">
-                                <rect key="frame" x="20" y="562" width="30" height="30"/>
-                                <state key="normal" title="No"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="750" width="30" height="30"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="aDx-1z-vXJ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZm-gy-eSF">
+                                <rect key="frame" x="20" y="532" width="86" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="MZf-Zj-nYM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="64"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MZf-Zj-nYM"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <action selector="onHitNo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBp-Ev-Bio"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAF-uZ-sap">
-                                <rect key="frame" x="279" y="566" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js0-uG-NPH">
+                                <rect key="frame" x="460" y="532" width="120" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Z1L-1z-mJd"/>
+                                    <constraint firstAttribute="height" constant="60" id="sAw-sQ-DgH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="64"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onHitYes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZiZ-bG-idY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pAF-uZ-sap" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2en-kO-H2a"/>
-                            <constraint firstItem="js0-uG-NPH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VDI-cG-3Qz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eZm-gy-eSF" secondAttribute="bottom" constant="20" id="buR-T7-hBW"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pAF-uZ-sap" secondAttribute="bottom" constant="13" id="eyX-1K-HxE"/>
-                            <constraint firstItem="eZm-gy-eSF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hfS-ef-MO7"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eZm-gy-eSF" secondAttribute="bottom" constant="8" symbolic="YES" id="ibe-d2-e2o"/>
-                            <constraint firstItem="eZm-gy-eSF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oZc-uR-ssZ"/>
-                            <constraint firstItem="eZm-gy-eSF" firstAttribute="baseline" secondItem="js0-uG-NPH" secondAttribute="baseline" id="wpZ-fh-m95"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="js0-uG-NPH" secondAttribute="trailing" id="1cr-Jv-IQq"/>
+                            <constraint firstItem="b0V-R6-dbf" firstAttribute="top" secondItem="pAF-uZ-sap" secondAttribute="bottom" constant="8" symbolic="YES" id="7K5-8K-YwV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="eZm-gy-eSF" secondAttribute="leading" id="BRe-s8-rIK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pAF-uZ-sap" secondAttribute="trailing" id="G8o-zb-tkg"/>
+                            <constraint firstItem="pAF-uZ-sap" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="b8W-vk-n7U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eZm-gy-eSF" secondAttribute="bottom" constant="8" symbolic="YES" id="dKe-gp-MrC"/>
+                            <constraint firstItem="js0-uG-NPH" firstAttribute="height" secondItem="eZm-gy-eSF" secondAttribute="height" id="he6-Ul-gnQ"/>
+                            <constraint firstItem="eZm-gy-eSF" firstAttribute="top" secondItem="b0V-R6-dbf" secondAttribute="bottom" constant="8" symbolic="YES" id="ouG-HJ-GXQ"/>
+                            <constraint firstItem="js0-uG-NPH" firstAttribute="baseline" secondItem="eZm-gy-eSF" secondAttribute="baseline" id="pR5-P1-hEc"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="b0V-R6-dbf" secondAttribute="leading" id="sbb-ne-z2z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b0V-R6-dbf" secondAttribute="trailing" id="vbT-e9-zYC"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="oZc-uR-ssZ"/>
-                                <exclude reference="buR-T7-hBW"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="oZc-uR-ssZ"/>
-                                <include reference="buR-T7-hBW"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
+                        <outlet property="cardWrapperView" destination="b0V-R6-dbf" id="Hza-G1-UZj"/>
                         <outlet property="scoreLabel" destination="pAF-uZ-sap" id="RFo-Ec-SWL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="594" y="463"/>
         </scene>
     </scenes>
 </document>

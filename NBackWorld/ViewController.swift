@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var cardWrapperView: UIView!
     
     var rule:NBackRule?
     var score:Int = 0;
@@ -21,18 +22,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.cardCtrl = CardController(nibName: "CardView", bundle: nil)
-        self.view.addSubview(self.cardCtrl!.view)
+        self.cardWrapperView.addSubview(self.cardCtrl!.view)
+        self.cardCtrl?.view.frame = self.cardWrapperView.frame
         
-        let frame:CGRect = CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.width, height: self.view.frame.height - 100)
-        self.cardCtrl?.view.frame = frame
-        
-        self.rule = SimpleCharNBack()
+        self.rule = SimpleCharNBack(N: 1)
         
         self.refreshDisplay()
     }
     
     func refreshDisplay() {
-        self.scoreLabel.text = ":: \(self.score) ::"
+        self.scoreLabel.text = "NBackWorld | Score: \(self.score)"
         self.cardCtrl?.present(self.rule!.getNext())
     }
 

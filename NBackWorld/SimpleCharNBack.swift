@@ -12,6 +12,7 @@ class SimpleCharNBack : NBackRule {
     
     let chars:String = "ABCDEFGHIJKLMNOPQRSTUVWXY"
     let range:Int = 2
+    var queue:LimitedQueue<String>
     
     var N:Int = 1
     var rangeMax:Int {
@@ -20,13 +21,24 @@ class SimpleCharNBack : NBackRule {
         }
     }
     
+    init(N: Int) {
+        self.N = N
+        self.queue = LimitedQueue<String>(limit: N + 1)
+    }
+    
     func getNext() -> String {
         let rand = RandomUtil.randIntRange(0, to: self.range)
-        return "\(self.chars[advance(self.chars.startIndex, rand)])"
+        let selection = "\(self.chars[advance(self.chars.startIndex, rand)])"
+        queue.add(selection)
+        return selection
     }
     
     func isMatch() -> Bool {
-        return true
+        do {
+            return try self.queue.getFirst() == self.queue.getLast()
+        } catch {
+            return false
+        }
     }
     
 }
