@@ -20,7 +20,7 @@ class NBackRuleConfiguration {
         }
     }
     
-    private var _range: Int = 2
+    private var _range:Int = 2
     var range:Int {
         get {
             return self._range
@@ -32,9 +32,22 @@ class NBackRuleConfiguration {
         }
     }
     
-    init(N: Int = 1, range: Int = 2) {
+    static var selections:[String:String] = [
+        "Alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+        "Numbers": "0123456789",
+        "Heads": "🐶🐱🐻🐷🐼🐭🐹🐮🐯🐰",
+        "Card": "♠️♣️♥️♦️",
+        "Colors": "🔴🔵⚫️⚪️",
+        "Nature": "🍄🌹🍀🌵🌲🌴🌼🌻",
+        "Food": "🍣🍓🍆🍤🍟🍏🍒",
+    ]
+    
+    var selection:String!
+    
+    init(N: Int = 1, range: Int = 2, selection: String = "Alphabet") {
         self.N = N
         self.range = range
+        self.selection = selection
     }
     
 }

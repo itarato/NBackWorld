@@ -9,6 +9,7 @@
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-UltraLight</string>
+            <string>HelveticaNeue-UltraLight</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -209,19 +210,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVw-1n-St2">
-                                <rect key="frame" x="140" y="41" width="11" height="21"/>
+                                <rect key="frame" x="140" y="69" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nce-29-VxE">
-                                <rect key="frame" x="99" y="78" width="9" height="21"/>
+                                <rect key="frame" x="99" y="106" width="9" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N - back:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zd9-NJ-XnG">
-                                <rect key="frame" x="20" y="78" width="71" height="21"/>
+                                <rect key="frame" x="20" y="106" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -234,37 +235,38 @@
                                 </connections>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="64" translatesAutoresizingMaskIntoConstraints="NO" id="Mxd-Qe-sdt">
-                                <rect key="frame" x="486" y="74" width="94" height="29"/>
+                                <rect key="frame" x="486" y="102" width="94" height="29"/>
                                 <connections>
                                     <action selector="onHitNBackStepper:" destination="GnG-2U-MP4" eventType="valueChanged" id="wNF-xq-PLL"/>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="2" maximumValue="26" translatesAutoresizingMaskIntoConstraints="NO" id="TcF-g5-P9p">
-                                <rect key="frame" x="486" y="37" width="94" height="29"/>
+                                <rect key="frame" x="486" y="65" width="94" height="29"/>
                                 <connections>
                                     <action selector="onHitCardVariationStepper:" destination="GnG-2U-MP4" eventType="valueChanged" id="dM5-eF-c7t"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card variation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoQ-1e-Wyc">
-                                <rect key="frame" x="20" y="41" width="112" height="21"/>
+                                <rect key="frame" x="20" y="69" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ik4-ar-YIg">
-                                <rect key="frame" x="244" y="8" width="113" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="175" y="8" width="251" height="49"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="42"/>
                                 <color key="textColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRH-cL-S8q">
-                                <rect key="frame" x="263" y="111" width="75" height="21"/>
+                                <rect key="frame" x="263" y="139" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KhS-3c-3nZ">
-                                <rect key="frame" x="140" y="140" width="320" height="216"/>
+                                <rect key="frame" x="0.0" y="168" width="600" height="216"/>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="GnG-2U-MP4" id="3vD-Wi-JYP"/>
                                     <outlet property="delegate" destination="GnG-2U-MP4" id="fKh-ef-1vB"/>
@@ -276,6 +278,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="zd9-NJ-XnG" secondAttribute="leading" id="1cS-T8-5vI"/>
                             <constraint firstItem="bVw-1n-St2" firstAttribute="leading" secondItem="QoQ-1e-Wyc" secondAttribute="trailing" constant="8" symbolic="YES" id="2HI-io-1de"/>
                             <constraint firstItem="bVw-1n-St2" firstAttribute="centerY" secondItem="QoQ-1e-Wyc" secondAttribute="centerY" id="5Pv-73-Dzi"/>
+                            <constraint firstItem="KhS-3c-3nZ" firstAttribute="width" secondItem="9kK-wx-Ikn" secondAttribute="width" id="9hU-mz-2fJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Mxd-Qe-sdt" secondAttribute="trailing" id="AC3-BI-pTM"/>
                             <constraint firstItem="zd9-NJ-XnG" firstAttribute="centerY" secondItem="Mxd-Qe-sdt" secondAttribute="centerY" id="ENd-fk-F2M"/>
                             <constraint firstItem="KhS-3c-3nZ" firstAttribute="centerX" secondItem="9kK-wx-Ikn" secondAttribute="centerX" id="Hy0-qY-l83"/>
@@ -301,6 +304,7 @@
                         <outlet property="cardVariationPlusMinus" destination="TcF-g5-P9p" id="5gy-1q-4TG"/>
                         <outlet property="nBackLabel" destination="nce-29-VxE" id="Chc-au-6Eg"/>
                         <outlet property="nBackPlusMinus" destination="Mxd-Qe-sdt" id="Ndg-w6-cav"/>
+                        <outlet property="selectionPickerView" destination="KhS-3c-3nZ" id="gXS-Hu-cSR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbC-Yv-t1v" userLabel="First Responder" sceneMemberID="firstResponder"/>

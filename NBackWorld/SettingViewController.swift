@@ -14,6 +14,7 @@ class SettingViewController : UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet weak var nBackLabel: UILabel!
     @IBOutlet weak var cardVariationPlusMinus: UIStepper!
     @IBOutlet weak var nBackPlusMinus: UIStepper!
+    @IBOutlet weak var selectionPickerView: UIPickerView!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -25,6 +26,10 @@ class SettingViewController : UIViewController, UIPickerViewDataSource, UIPicker
         let config = ConfigurationCenter.defaultCenter().config
         self.cardVariationPlusMinus.value = Double(config.range)
         self.nBackPlusMinus.value = Double(config.N)
+        
+        let selectionKeys = NBackRuleConfiguration.selections.keys
+        self.selectionPickerView.selectRow(selectionKeys.array.indexOf(config.selection)! as Int, inComponent: 0, animated: true)
+        
         refreshDisplay()
     }
     
@@ -47,18 +52,23 @@ class SettingViewController : UIViewController, UIPickerViewDataSource, UIPicker
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    // @Mark
+    // MARK: Picker view elements.
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 2
+        return NBackRuleConfiguration.selections.count
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "Hello"
+        let keys = NBackRuleConfiguration.selections.keys
+        return NBackRuleConfiguration.selections[keys[advance(keys.startIndex, row)]]
     }
 
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let keys = NBackRuleConfiguration.selections.keys
+        ConfigurationCenter.defaultCenter().config.selection = keys[advance(keys.startIndex, row)]
+    }
 }

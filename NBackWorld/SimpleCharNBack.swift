@@ -10,9 +10,6 @@ import Foundation
 
 class SimpleCharNBack : NBackRule {
     
-//    let chars:String = "ABCDEFGHIJKLMNOPQRSTUVWXY"
-    let chars:String = "🐭🐹🐮🐯🐰🐱"
-    
     var queue:LimitedQueue<String>
     var config: NBackRuleConfiguration
     
@@ -23,7 +20,9 @@ class SimpleCharNBack : NBackRule {
     
     func getNext() -> String {
         let rand = RandomUtil.randIntRange(0, to: self.config.range)
-        let selection = "\(self.chars[advance(self.chars.startIndex, rand)])"
+        let charSequence:String! = NBackRuleConfiguration.selections[self.config.selection]
+        let char = charSequence[advance(charSequence.startIndex, rand)]
+        let selection = "\(char)"
         queue.add(selection)
         return selection
     }
