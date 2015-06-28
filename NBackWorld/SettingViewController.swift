@@ -30,7 +30,23 @@ class SettingViewController : UIViewController, UIPickerViewDataSource, UIPicker
         let selectionKeys = NBackRuleConfiguration.selections.keys
         self.selectionPickerView.selectRow(selectionKeys.array.indexOf(config.selection)! as Int, inComponent: 0, animated: true)
         
+        self.checkRangeLimitation()
+        
         refreshDisplay()
+    }
+    
+    func checkRangeLimitation() {
+        let selection = ConfigurationCenter.defaultCenter().config.selection
+        if let chars = NBackRuleConfiguration.selections[selection] {
+            let countInt = chars.characters.count
+            let count = Double(countInt)
+            if self.cardVariationPlusMinus.value > count {
+                self.cardVariationPlusMinus.value = count
+                ConfigurationCenter.defaultCenter().config.range = countInt
+                refreshDisplay()
+            }
+            self.cardVariationPlusMinus.maximumValue = count
+        }
     }
     
     @IBAction func onHitCardVariationStepper(sender: UIStepper) {
@@ -69,6 +85,9 @@ class SettingViewController : UIViewController, UIPickerViewDataSource, UIPicker
 
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let keys = NBackRuleConfiguration.selections.keys
-        ConfigurationCenter.defaultCenter().config.selection = keys[advance(keys.startIndex, row)]
+        let selection = keys[advance(keys.startIndex, row)]
+        ConfigurationCenter.defaultCenter().config.selection = selection
+        
+        self.checkRangeLimitation()
     }
 }
