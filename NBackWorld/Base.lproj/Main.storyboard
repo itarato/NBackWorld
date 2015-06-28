@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -24,7 +25,7 @@
                                 <color key="textColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="b0V-R6-dbf" customClass="FillerView" customModule="NBackWorld" customModuleProvider="target">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="b0V-R6-dbf">
                                 <rect key="frame" x="20" y="49" width="560" height="475"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -48,20 +49,33 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZm-gy-eSF">
                                 <rect key="frame" x="20" y="532" width="86" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="MZf-Zj-nYM"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="64"/>
                                 <state key="normal" title="No">
                                     <color key="titleColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onHitNo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBp-Ev-Bio"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmK-Ap-8wg">
+                                <rect key="frame" x="227" y="532" width="146" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="2SU-C1-ljS"/>
+                                    <constraint firstAttribute="height" constant="60" id="Qmb-Xc-Woh"/>
+                                    <constraint firstAttribute="width" secondItem="XmK-Ap-8wg" secondAttribute="height" multiplier="146:89" id="y31-wh-2lt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="64"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.15060014599999999" green="0.60353696270000001" blue="0.91921164769999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="MZf-Zj-nYM"/>
+                                        <exclude reference="2SU-C1-ljS"/>
+                                        <exclude reference="y31-wh-2lt"/>
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="onHitNo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBp-Ev-Bio"/>
+                                    <action selector="onHitNext" destination="BYZ-38-t0r" eventType="touchUpInside" id="tDl-8f-5Gt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js0-uG-NPH">
@@ -86,17 +100,22 @@
                             <constraint firstAttribute="leadingMargin" secondItem="eZm-gy-eSF" secondAttribute="leading" id="BRe-s8-rIK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pAF-uZ-sap" secondAttribute="trailing" id="G8o-zb-tkg"/>
                             <constraint firstItem="pAF-uZ-sap" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="b8W-vk-n7U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XmK-Ap-8wg" secondAttribute="bottom" constant="8" symbolic="YES" id="cOh-za-hEY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eZm-gy-eSF" secondAttribute="bottom" constant="8" symbolic="YES" id="dKe-gp-MrC"/>
                             <constraint firstItem="js0-uG-NPH" firstAttribute="height" secondItem="eZm-gy-eSF" secondAttribute="height" id="he6-Ul-gnQ"/>
                             <constraint firstItem="eZm-gy-eSF" firstAttribute="top" secondItem="b0V-R6-dbf" secondAttribute="bottom" constant="8" symbolic="YES" id="ouG-HJ-GXQ"/>
                             <constraint firstItem="js0-uG-NPH" firstAttribute="baseline" secondItem="eZm-gy-eSF" secondAttribute="baseline" id="pR5-P1-hEc"/>
                             <constraint firstAttribute="leadingMargin" secondItem="b0V-R6-dbf" secondAttribute="leading" id="sbb-ne-z2z"/>
+                            <constraint firstItem="XmK-Ap-8wg" firstAttribute="centerX" secondItem="b0V-R6-dbf" secondAttribute="centerX" id="t3c-J9-gAh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="b0V-R6-dbf" secondAttribute="trailing" id="vbT-e9-zYC"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cardWrapperView" destination="b0V-R6-dbf" id="Hza-G1-UZj"/>
+                        <outlet property="nextButton" destination="XmK-Ap-8wg" id="A9X-v0-Erp"/>
+                        <outlet property="noButton" destination="eZm-gy-eSF" id="RrO-jN-1Lq"/>
                         <outlet property="scoreLabel" destination="pAF-uZ-sap" id="RFo-Ec-SWL"/>
+                        <outlet property="yesButton" destination="js0-uG-NPH" id="NWg-OC-thr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

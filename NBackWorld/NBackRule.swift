@@ -16,4 +16,6 @@ protocol NBackRule {
     
     func isMatch() -> Bool
     
+    func isGuessingStarted() -> Bool
+    
 }

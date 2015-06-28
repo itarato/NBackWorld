@@ -11,19 +11,20 @@ import Foundation
 class SimpleCharNBack : NBackRule {
     
     let chars:String = "ABCDEFGHIJKLMNOPQRSTUVWXY"
-    let range:Int = 2
+    let range:Int
     var queue:LimitedQueue<String>
     
-    var N:Int = 1
+    var N:Int
     var rangeMax:Int {
         get {
             return self.chars.characters.count
         }
     }
     
-    init(N: Int) {
+    init(N: Int, range: Int) {
         self.N = N
         self.queue = LimitedQueue<String>(limit: N + 1)
+        self.range = range
     }
     
     func getNext() -> String {
@@ -36,6 +37,15 @@ class SimpleCharNBack : NBackRule {
     func isMatch() -> Bool {
         do {
             return try self.queue.getFirst() == self.queue.getLast()
+        } catch {
+            return false
+        }
+    }
+    
+    func isGuessingStarted() -> Bool {
+        do {
+            try self.queue.getLast()
+            return true
         } catch {
             return false
         }

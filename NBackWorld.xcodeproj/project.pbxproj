@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47099B191B3BD84300BE3715 /* FillerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47099B181B3BD84300BE3715 /* FillerView.swift */; };
 		473F01F91B38803B001E69D1 /* SimpleCharNBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01F81B38803B001E69D1 /* SimpleCharNBack.swift */; };
 		473F01FB1B388163001E69D1 /* NBackRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01FA1B388163001E69D1 /* NBackRule.swift */; };
 		473F01FD1B389D7D001E69D1 /* RandomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F01FC1B389D7D001E69D1 /* RandomUtil.swift */; };
@@ -20,6 +19,7 @@
 		473F02131B38B102001E69D1 /* LimitedQueueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F02121B38B102001E69D1 /* LimitedQueueError.swift */; };
 		4795B8B01B371ACB00940776 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795B8AF1B371ACB00940776 /* CardController.swift */; };
 		4795B8B21B371B1D00940776 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4795B8B11B371B1D00940776 /* CardView.xib */; };
+		47C1C96B1B3FE43100429324 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47C1C96A1B3FE43100429324 /* SettingView.xib */; };
 		47D5F8381B35663500A0791F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D5F8371B35663500A0791F /* AppDelegate.swift */; };
 		47D5F83A1B35663500A0791F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D5F8391B35663500A0791F /* ViewController.swift */; };
 		47D5F83D1B35663500A0791F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D5F83B1B35663500A0791F /* Main.storyboard */; };
@@ -47,7 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		47099B181B3BD84300BE3715 /* FillerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillerView.swift; sourceTree = "<group>"; };
 		473F01F81B38803B001E69D1 /* SimpleCharNBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCharNBack.swift; sourceTree = "<group>"; };
 		473F01FA1B388163001E69D1 /* NBackRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBackRule.swift; sourceTree = "<group>"; };
 		473F01FC1B389D7D001E69D1 /* RandomUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUtil.swift; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		473F02121B38B102001E69D1 /* LimitedQueueError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitedQueueError.swift; sourceTree = "<group>"; };
 		4795B8AF1B371ACB00940776 /* CardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
 		4795B8B11B371B1D00940776 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		47C1C96A1B3FE43100429324 /* SettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
 		47D5F8341B35663500A0791F /* NBackWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBackWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D5F8371B35663500A0791F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D5F8391B35663500A0791F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 		47099B171B3BD82800BE3715 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				47099B181B3BD84300BE3715 /* FillerView.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -114,6 +113,7 @@
 				47D5F83B1B35663500A0791F /* Main.storyboard */,
 				47D5F8401B35663500A0791F /* LaunchScreen.storyboard */,
 				4795B8B11B371B1D00940776 /* CardView.xib */,
+				47C1C96A1B3FE43100429324 /* SettingView.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -319,6 +319,7 @@
 				47D5F8421B35663500A0791F /* LaunchScreen.storyboard in Resources */,
 				47D5F83F1B35663500A0791F /* Assets.xcassets in Resources */,
 				4795B8B21B371B1D00940776 /* CardView.xib in Resources */,
+				47C1C96B1B3FE43100429324 /* SettingView.xib in Resources */,
 				47D5F83D1B35663500A0791F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +352,6 @@
 				473F01FB1B388163001E69D1 /* NBackRule.swift in Sources */,
 				473F02131B38B102001E69D1 /* LimitedQueueError.swift in Sources */,
 				4795B8B01B371ACB00940776 /* CardController.swift in Sources */,
-				47099B191B3BD84300BE3715 /* FillerView.swift in Sources */,
 				47D5F8381B35663500A0791F /* AppDelegate.swift in Sources */,
 				473F02111B38B0CE001E69D1 /* Errors.swift in Sources */,
 				473F01F91B38803B001E69D1 /* SimpleCharNBack.swift in Sources */,
@@ -499,6 +499,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NBackWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itarato.NBackWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,6 +512,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NBackWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itarato.NBackWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";

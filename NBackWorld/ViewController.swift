@@ -12,29 +12,51 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var cardWrapperView: UIView!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var noButton: UIButton!
+    @IBOutlet weak var yesButton: UIButton!
     
     var rule:NBackRule?
     var score:Int = 0;
-    var cardCtrl:CardController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        self.cardCtrl = CardController(nibName: "CardView", bundle: nil)
-        self.cardWrapperView.addSubview(self.cardCtrl!.view)
-        self.cardCtrl?.view.frame = self.cardWrapperView.frame
+        self.noButton.hidden = true
+        self.yesButton.hidden = true
         
-        self.rule = SimpleCharNBack(N: 1)
-        
+        self.rule = SimpleCharNBack(N: 1, range: 3)
         self.refreshDisplay()
     }
     
     func refreshDisplay() {
         self.scoreLabel.text = "NBackWorld | Score: \(self.score)"
-        self.cardCtrl?.present(self.rule!.getNext())
+        self.clearCardWrapperView()
+        self.addNewCard()
     }
 
+    private func clearCardWrapperView() {
+        for cardSubView in self.cardWrapperView.subviews {
+            UIView.animateWithDuration(0.1, animations: { () -> Void in
+                cardSubView.frame.origin.x = self.cardWrapperView.frame.width
+                }, completion: { (Bool) -> Void in
+                    cardSubView.removeFromSuperview()
+            })
+        }
+    }
+    
+    private func addNewCard() {
+        let cardCtrl = CardController(nibName: "CardView", bundle: nil)
+        self.cardWrapperView.addSubview(cardCtrl.view)
+        cardCtrl.present(self.rule!.getNext())
+        cardCtrl.view.frame.size = self.cardWrapperView.frame.size
+        cardCtrl.view.frame.origin.x = -self.cardWrapperView.frame.width
+        
+        UIView.animateWithDuration(0.3) { () -> Void in
+            cardCtrl.view.frame.origin.x = 0
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -47,14 +69,44 @@ class ViewController: UIViewController {
         self.checkResult(true)
     }
     
+    @IBAction func onHitNext() {
+        self.refreshDisplay()
+        if self.rule!.isGuessingStarted() {
+            self.nextButton.hidden = true
+            self.noButton.hidden = false
+            self.yesButton.hidden = false
+        }
+    }
+    
+    private func showFailAnimation() {
+        let redView = UIView(frame: self.view.frame)
+        redView.backgroundColor = UIColor.redColor()
+        redView.alpha = 0.0
+        
+        self.view.addSubview(redView)
+        UIView.animateWithDuration(0.1, animations: { () -> Void in
+            redView.alpha = 5.0
+        }, completion: { (Bool) -> Void in
+            self.hideFailAnimtion(redView)
+        })
+    }
+    
+    private func hideFailAnimtion(redView: UIView) {
+        UIView.animateWithDuration(0.1, animations: { () -> Void in
+            redView.alpha = 0.1
+        }, completion: { (Bool) -> Void in
+            redView.removeFromSuperview()
+        })
+    }
+    
     private func checkResult(tip: Bool) {
         if (tip && self.rule!.isMatch()) || (!tip && !self.rule!.isMatch()) {
             self.score += 1
         } else {
             self.score -= 2
+            self.showFailAnimation()
         }
         self.refreshDisplay()
     }
 
 }
-
