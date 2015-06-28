@@ -17,9 +17,13 @@
 		473F020C1B38AF81001E69D1 /* LimitedQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F020B1B38AF81001E69D1 /* LimitedQueueTests.swift */; };
 		473F02111B38B0CE001E69D1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F02101B38B0CE001E69D1 /* Errors.swift */; };
 		473F02131B38B102001E69D1 /* LimitedQueueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F02121B38B102001E69D1 /* LimitedQueueError.swift */; };
+		4772CC601B3FF489006E10B3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772CC5F1B3FF489006E10B3 /* SettingViewController.swift */; };
+		4772CC621B40267A006E10B3 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772CC611B40267A006E10B3 /* IntroViewController.swift */; };
+		4772CC641B40284C006E10B3 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772CC631B40284C006E10B3 /* Defines.swift */; };
+		4772CC661B402931006E10B3 /* NBackRuleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772CC651B402931006E10B3 /* NBackRuleConfiguration.swift */; };
+		4772CC681B402D7A006E10B3 /* ConfigurationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772CC671B402D7A006E10B3 /* ConfigurationCenter.swift */; };
 		4795B8B01B371ACB00940776 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795B8AF1B371ACB00940776 /* CardController.swift */; };
 		4795B8B21B371B1D00940776 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4795B8B11B371B1D00940776 /* CardView.xib */; };
-		47C1C96B1B3FE43100429324 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47C1C96A1B3FE43100429324 /* SettingView.xib */; };
 		47D5F8381B35663500A0791F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D5F8371B35663500A0791F /* AppDelegate.swift */; };
 		47D5F83A1B35663500A0791F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D5F8391B35663500A0791F /* ViewController.swift */; };
 		47D5F83D1B35663500A0791F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D5F83B1B35663500A0791F /* Main.storyboard */; };
@@ -57,9 +61,13 @@
 		473F020B1B38AF81001E69D1 /* LimitedQueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitedQueueTests.swift; sourceTree = "<group>"; };
 		473F02101B38B0CE001E69D1 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		473F02121B38B102001E69D1 /* LimitedQueueError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitedQueueError.swift; sourceTree = "<group>"; };
+		4772CC5F1B3FF489006E10B3 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		4772CC611B40267A006E10B3 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		4772CC631B40284C006E10B3 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
+		4772CC651B402931006E10B3 /* NBackRuleConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBackRuleConfiguration.swift; sourceTree = "<group>"; };
+		4772CC671B402D7A006E10B3 /* ConfigurationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationCenter.swift; sourceTree = "<group>"; };
 		4795B8AF1B371ACB00940776 /* CardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
 		4795B8B11B371B1D00940776 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
-		47C1C96A1B3FE43100429324 /* SettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
 		47D5F8341B35663500A0791F /* NBackWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBackWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D5F8371B35663500A0791F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D5F8391B35663500A0791F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,20 +108,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		47099B171B3BD82800BE3715 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
 		473F01FE1B389EE4001E69D1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				47D5F83B1B35663500A0791F /* Main.storyboard */,
 				47D5F8401B35663500A0791F /* LaunchScreen.storyboard */,
 				4795B8B11B371B1D00940776 /* CardView.xib */,
-				47C1C96A1B3FE43100429324 /* SettingView.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -121,13 +121,17 @@
 		473F01FF1B389EF8001E69D1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				47099B171B3BD82800BE3715 /* UI */,
 				473F020D1B38B09D001E69D1 /* Error */,
 				473F02021B389F36001E69D1 /* Game */,
 				473F02001B389F15001E69D1 /* Util */,
 				47D5F8371B35663500A0791F /* AppDelegate.swift */,
 				47D5F8391B35663500A0791F /* ViewController.swift */,
 				4795B8AF1B371ACB00940776 /* CardController.swift */,
+				4772CC5F1B3FF489006E10B3 /* SettingViewController.swift */,
+				4772CC611B40267A006E10B3 /* IntroViewController.swift */,
+				4772CC631B40284C006E10B3 /* Defines.swift */,
+				4772CC651B402931006E10B3 /* NBackRuleConfiguration.swift */,
+				4772CC671B402D7A006E10B3 /* ConfigurationCenter.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -319,7 +323,6 @@
 				47D5F8421B35663500A0791F /* LaunchScreen.storyboard in Resources */,
 				47D5F83F1B35663500A0791F /* Assets.xcassets in Resources */,
 				4795B8B21B371B1D00940776 /* CardView.xib in Resources */,
-				47C1C96B1B3FE43100429324 /* SettingView.xib in Resources */,
 				47D5F83D1B35663500A0791F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,12 +349,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				473F02041B38A3A6001E69D1 /* TypeUtil.swift in Sources */,
+				4772CC601B3FF489006E10B3 /* SettingViewController.swift in Sources */,
 				473F01FD1B389D7D001E69D1 /* RandomUtil.swift in Sources */,
+				4772CC621B40267A006E10B3 /* IntroViewController.swift in Sources */,
 				473F020A1B38AC42001E69D1 /* LimitedQueue.swift in Sources */,
 				47D5F83A1B35663500A0791F /* ViewController.swift in Sources */,
 				473F01FB1B388163001E69D1 /* NBackRule.swift in Sources */,
 				473F02131B38B102001E69D1 /* LimitedQueueError.swift in Sources */,
 				4795B8B01B371ACB00940776 /* CardController.swift in Sources */,
+				4772CC681B402D7A006E10B3 /* ConfigurationCenter.swift in Sources */,
+				4772CC641B40284C006E10B3 /* Defines.swift in Sources */,
+				4772CC661B402931006E10B3 /* NBackRuleConfiguration.swift in Sources */,
 				47D5F8381B35663500A0791F /* AppDelegate.swift in Sources */,
 				473F02111B38B0CE001E69D1 /* Errors.swift in Sources */,
 				473F01F91B38803B001E69D1 /* SimpleCharNBack.swift in Sources */,

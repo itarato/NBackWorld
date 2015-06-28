@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         self.noButton.hidden = true
         self.yesButton.hidden = true
         
-        self.rule = SimpleCharNBack(N: 1, range: 3)
+        self.rule = SimpleCharNBack(config: ConfigurationCenter.defaultCenter().config)
         self.refreshDisplay()
     }
     
@@ -78,6 +78,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func onHitEnd() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     private func showFailAnimation() {
         let redView = UIView(frame: self.view.frame)
         redView.backgroundColor = UIColor.redColor()
@@ -104,6 +108,7 @@ class ViewController: UIViewController {
             self.score += 1
         } else {
             self.score -= 2
+            self.score = self.score < 0 ? 0 : self.score
             self.showFailAnimation()
         }
         self.refreshDisplay()

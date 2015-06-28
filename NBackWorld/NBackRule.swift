@@ -10,7 +10,7 @@ import Foundation
 
 protocol NBackRule {
     
-    var N:Int { set get }
+    init(config: NBackRuleConfiguration)
     
     func getNext() -> String
     
